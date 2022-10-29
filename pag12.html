@@ -8,11 +8,14 @@
     </head>
     <body>
         <script>
-            var i = (prompt("Digite um valor"))
-            while (i>0) {
-                alert(i)
-                i--
-            }
+            var valor = parseInt(prompt("Digite um valor"))
+            var i=0
+            do {
+                if(i%3===0) {
+                    alert(i)
+                }
+            i++
+            } while (i<=valor)
         </script>
     </body>
 </html>
